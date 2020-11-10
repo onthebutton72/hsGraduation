@@ -1,0 +1,31 @@
+.title {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color:#f8f8ff;
+}
+
+.right {
+    background-image: url("/images/celebration.png");
+    text-align: center;
+    background-color:green;
+    width:400px;
+    height:450px;
+    float:right;
+}
+
+.desc {
+    font-family: cursive;
+    color:#f8f8ff;
+    font-size: 120%;
+}
+
+.left {
+    float: left;
+    background-color:red;
+    width:400px;
+    height:450px;
+}
+
+.box {
+    background-color:blue;
+    width:800px;
+}
