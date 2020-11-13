@@ -15,6 +15,8 @@ gulp.task('browser-sync', function() {
             baseDir: "./src"
         }
     });
+    gulp.watch("src/*.html").on('change', browserSync.reload);
+    gulp.watch("src/css/*.css").on('change', browserSync.reload);
 });
 
 gulp.task('minify', async function() {

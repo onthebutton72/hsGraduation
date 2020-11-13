@@ -1,28 +1,31 @@
 .title {
     font-family: Snell Roundhand, cursive;
-    color:#f8f8ff;
-    font-size:6vh;
-    text-align:left;
+    color: #f8f8ff;
+    font-size: 1vh;
+    text-align: left;
     padding-left: 20%;
+    margin-left: -35vh;
 }
 
 #left {
     float: left;
-    background-color:black;
-    width:50%;
+    background-color: black;
+    width: 50%;
 }
 
 .right {
     background-image: url("../img/celebration.png");
     text-align: center;
-    width:50%;
-    float:right;
+    width: 40%;
+    float: right;
 }
 
 .desc {
     font-family: Snell Roundhand, cursive;
-    color:#f8f8ff;
+    color: #f8f8ff;
     font-size: 3vh;
+    margin-left: -5vh;
+    margin-top: -5vh;
 }
 
 #box {
@@ -31,7 +34,66 @@
 
 #left img {
     width: 90%;
-    margin:35px;
-    border-style:double;
-    border-color:#f8f8ff;
+    margin: 45px;
+    border-style: double;
+    border-color: #f8f8ff;
+}
+
+@media only screen and (min-width: 1550px) {
+    .title {
+        font-family: Snell Roundhand, cursive;
+        color: #f8f8ff;
+        font-size: 10vh;
+        text-align: left;
+        padding-left: 20%;
+        margin-left: -35vh;
+    }
+}
+
+@media only screen and (max-width: 1549px) and (min-width: 1200px) {
+    .title {
+        font-family: Snell Roundhand, cursive;
+        color: #f8f8ff;
+        font-size: 5vh;
+        text-align: left;
+        padding-left: 20%;
+        padding-top: 7%;
+        margin-left: -25vh;
+    }
+
+    .desc {
+        font-family: Snell Roundhand, cursive;
+        color: #f8f8ff;
+        font-size: 2.5vh;
+        margin-left: -10vh;
+        margin-top: -1vh;
+    }
+    
+    #left img {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 769px) {
+    .title {
+        font-family: Snell Roundhand, cursive;
+        color: #f8f8ff;
+        font-size: 4vh;
+        text-align: left;
+        padding-left: 10%;
+        padding-top: 10%;
+        margin-left: -15vh;
+    }
+    .desc {
+        font-family: Snell Roundhand, cursive;
+        color: #f8f8ff;
+        font-size: 2.0vh;
+        margin-left: -10vh;
+        margin-top: -2vh;
+    }
+
+    #left img {
+        width: 80%;
+        margin: 50px;
+    }
 }
