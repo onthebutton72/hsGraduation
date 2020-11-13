@@ -15,45 +15,38 @@ body {
 /* headshot */
 .box-1 {
     width:100%;
-    flex:1;
     order:1;
 }
 
 /* class */
 .box-2 {
     width:100%;
-    flex:1;
     order:2;
 }
 
 /* annoucement */
 .box-3 {
     width:100%;
-    flex:1;
 }
 
 /* name */
 .box-4 {
     width:100%;
-    flex:1;
 }
 
 /* school */
 .box-5 {
     width:100%;
-    flex:1;
 }
 
 /* quote */
 .box-6 {
     width:100%;
-    flex:1;
 }
 
 /* all text */
 .box-7 {
     width:100%;
-    flex:1;  
 }
 
 .container-1 {
@@ -124,45 +117,88 @@ body {
 @media only screen and (min-width: 421px) and (max-width: 767px) {
     /* headshot */
     .box-1 img {
-        width:85vh;
+        width:96vh;
         padding-top:2.5%;
-        padding-bottom:2.5%;
     }
 
-    /* class */
-    .box-2 {
+    /* hide boxes */
+    .box-2, .box-3, .box-4, .box-5, .box-6 {
         display:none;
     }
-
-    /* annoucement */
-    .box-3 {
-        display:none;
-    }
-
-    /* name */
-    .box-4 {
-        display:none;
-    }
-
-    /* school */
-    .box-5 {
-        display:none;
-    }
-
-    /* quote */
-    .box-6 {
-        display:none;
-    }
-
+    
     /* all text */
     .box-7 {
         order:7;
-
     }
     
+    #myClass-ls, #myName-ls {
+        margin-left: -20vh;
+    }
+
+    #myAnnoucement-ls, #mySchool-ls, #myGradDate-ls {
+        margin-top: -5vh;
+        margin-left:3vh;
+    }
+
+    #myQuote-ls, #myAuthor-ls {
+        text-align:center;
+        font-size: 90%;
+        margin-left:3vh;
+    }
+
     .container-1 {
         flex-direction: row;
-        margin-top:3%;
-        width:52%;
+        margin-top:2%;
     }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+        /* headshot */
+        .box-1 {
+            order:2;
+            width: 75%;
+            margin-left: auto;
+            margin-right:auto;
+        }
+    
+        /* class */
+        .box-2 {
+            order:1;
+            font-size:150%;
+            text-align:center;
+        }
+    
+        /* annoucement */
+        .box-3 {
+            order:3;
+            font-size:150%;
+            text-align: center;
+            margin-bottom: -4vh;
+        }
+    
+        /* name */
+        .box-4 {
+            order:4;
+            font-size:150%;
+            text-align:center;
+            margin-bottom: -4vh;
+           }
+    
+        /* school */
+        .box-5 {
+            order:5;
+            font-size:150%;
+            text-align:center;
+        }
+    
+        /* quote */
+        .box-6 {
+            order:6;
+            text-align:center;
+        }
+    
+        /* all text */
+        .box-7 {
+            display:none;    
+        }
+    }
