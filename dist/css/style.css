@@ -1,99 +1,106 @@
-.title {
+.title, p {
     font-family: Snell Roundhand, cursive;
-    color: #f8f8ff;
-    font-size: 1vh;
-    text-align: left;
-    padding-left: 20%;
-    margin-left: -35vh;
 }
 
-#left {
-    float: left;
-    background-color: black;
-    width: 50%;
-}
-
-.right {
-    background-image: url("../img/celebration.png");
-    text-align: center;
-    width: 40%;
-    float: right;
-}
-
-.desc {
-    font-family: Snell Roundhand, cursive;
-    color: #f8f8ff;
-    font-size: 3vh;
-    margin-left: -5vh;
-    margin-top: -5vh;
-}
-
-#box {
+.container {
+    height:100%;
     display: flex;
+    flex-direction: column;
+    background-color:black;
+    color:white;
 }
 
-#left img {
-    width: 90%;
-    margin: 45px;
-    border-style: double;
-    border-color: #f8f8ff;
+.author {
+    text-align:center;
 }
 
-@media only screen and (min-width: 1550px) {
-    .title {
-        font-family: Snell Roundhand, cursive;
-        color: #f8f8ff;
-        font-size: 10vh;
-        text-align: left;
-        padding-left: 20%;
-        margin-left: -35vh;
-    }
+.box-1 img {
+    width: 95%;
+    padding-left:2.5%;
+    padding-right:2.5%;
 }
 
-@media only screen and (max-width: 1549px) and (min-width: 1200px) {
-    .title {
-        font-family: Snell Roundhand, cursive;
-        color: #f8f8ff;
-        font-size: 5vh;
-        text-align: left;
-        padding-left: 20%;
-        padding-top: 7%;
-        margin-left: -25vh;
-    }
-
-    .desc {
-        font-family: Snell Roundhand, cursive;
-        color: #f8f8ff;
-        font-size: 2.5vh;
-        margin-left: -10vh;
-        margin-top: -1vh;
-    }
-    
-    #left img {
-        width: 85%;
-    }
+/* headshot */
+.box-1 {
+    width:100%;
+    flex:1;
+    order:1;
 }
 
-@media only screen and (max-width: 1199px) and (min-width: 769px) {
-    .title {
-        font-family: Snell Roundhand, cursive;
-        color: #f8f8ff;
-        font-size: 4vh;
-        text-align: left;
-        padding-left: 10%;
-        padding-top: 10%;
-        margin-left: -15vh;
-    }
-    .desc {
-        font-family: Snell Roundhand, cursive;
-        color: #f8f8ff;
-        font-size: 2.0vh;
-        margin-left: -10vh;
-        margin-top: -2vh;
+/* class */
+.box-2 {
+    width:100%;
+    flex:1;
+    order:2;
+}
+
+/* annoucement */
+.box-3 {
+    width:100%;
+    flex:1;
+}
+
+/* name */
+.box-4 {
+    width:100%;
+    flex:1;
+}
+
+/* school */
+.box-5 {
+    width:100%;
+    flex:1;
+}
+
+/* quote */
+.box-6 {
+    width:100%;
+    flex:1;
+}
+
+@media only screen and (max-width: 600px) {
+    /* headshot */
+    .box-1 {
+        order:2;
     }
 
-    #left img {
-        width: 80%;
-        margin: 50px;
+    /* class */
+    .box-2 {
+        order:1;
+        font-size:120%;
+        text-align:center;
+        margin-top:-2vh;
+        margin-bottom:-3vh;
+    }
+
+    /* annoucement */
+    .box-3 {
+        order:3;
+        font-size:140%;
+        text-align:center;
+        margin-top:-2vh;
+    }
+
+    /* name */
+    .box-4 {
+        order:4;
+        font-size:120%;
+        text-align:center;
+        margin-top:-6vh;
+    }
+
+    /* school */
+    .box-5 {
+        order:5;
+        font-size:140%;
+        text-align:center;
+        margin-top:-6vh;
+        margin-bottom:-4vh;
+    }
+
+    /* quote */
+    .box-6 {
+        order:6;
+        text-align:center;
     }
 }

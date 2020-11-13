@@ -1,6 +1,5 @@
 const gulp = require('gulp');
 const uglify = require('gulp-uglify');
-const sass = require('gulp-sass');
 const imagemin = require('gulp-imagemin');
 const browserSync = require('browser-sync').create();
 
