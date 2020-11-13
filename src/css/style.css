@@ -1,17 +1,9 @@
-.title, p {
-    font-family: Snell Roundhand, cursive;
-}
-
-.container {
-    height:100%;
-    display: flex;
-    flex-direction: column;
-    background-color:black;
-    color:white;
-}
-
 .author {
     text-align:center;
+}
+
+body {
+    background-color: gray;
 }
 
 .box-1 img {
@@ -58,7 +50,26 @@
     flex:1;
 }
 
-@media only screen and (max-width: 600px) {
+/* all text */
+.box-7 {
+    width:100%;
+    flex:1;  
+}
+
+.container-1 {
+    height:100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    background-color:black;
+    color:white;
+}
+
+.title, p {
+    font-family: Snell Roundhand, cursive;
+}
+
+@media only screen and (max-width: 420px) {
     /* headshot */
     .box-1 {
         order:2;
@@ -102,5 +113,56 @@
     .box-6 {
         order:6;
         text-align:center;
+    }
+
+    /* all text */
+    .box-7 {
+        display:none;    
+    }
+}
+
+@media only screen and (min-width: 421px) and (max-width: 767px) {
+    /* headshot */
+    .box-1 img {
+        width:85vh;
+        padding-top:2.5%;
+        padding-bottom:2.5%;
+    }
+
+    /* class */
+    .box-2 {
+        display:none;
+    }
+
+    /* annoucement */
+    .box-3 {
+        display:none;
+    }
+
+    /* name */
+    .box-4 {
+        display:none;
+    }
+
+    /* school */
+    .box-5 {
+        display:none;
+    }
+
+    /* quote */
+    .box-6 {
+        display:none;
+    }
+
+    /* all text */
+    .box-7 {
+        order:7;
+
+    }
+    
+    .container-1 {
+        flex-direction: row;
+        margin-top:3%;
+        width:52%;
     }
 }
