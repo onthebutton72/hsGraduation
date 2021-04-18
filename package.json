@@ -17,10 +17,12 @@
   },
   "homepage": "https://github.com/onthebutton72/hsGraduation#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.13",
+    "browser-sync": "^2.26.14",
     "gulp": "^4.0.2",
-    "gulp-imagemin": "^7.1.0",
     "gulp-uglify": "^3.0.2",
     "node": "^15.2.0"
+  },
+  "dependencies": {
+    "gulp-imagemin": "^7.1.0"
   }
 }
